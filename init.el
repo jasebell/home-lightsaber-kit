@@ -33,7 +33,6 @@
         (hydra . "melpa-stable")
         (ido . "melpa-stable")
         (ido-completing-read+ . "melpa-stable")
-        (ido-ubiquitous . "melpa-stable")
         (ido-vertical-mode . "melpa-stable")
         (ivy . "melpa")
         (flycheck-pos-tip . "melpa-stable")
@@ -231,10 +230,6 @@
         ido-everywhere t  ; tbd
         ido-case-fold t)) ; ignore case
 
-(use-package ido-ubiquitous
-  :ensure t
-  :config (ido-ubiquitous-mode 1))
-
 (use-package flx-ido
   :ensure t
   :config (flx-ido-mode 1))
@@ -254,7 +249,7 @@
 (load-theme 'wheatgrass)
 
 (when (memq window-system '(mac ns))
-  (set-default-font "-apple-Menlo-medium-normal-normal-*-12-*-*-*-m-0-iso10646-1"))
+  (set-default-font "-apple-Menlo-medium-normal-normal-*-14-*-*-*-m-0-iso10646-1"))
 
 ;; no toolbar
 (tool-bar-mode -1)
